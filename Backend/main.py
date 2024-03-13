@@ -26,12 +26,19 @@ async def run_recon(subnet: str):
     # Run the shell script with the provided subnet parameter
     subprocess.run(command, check=True)
 
+    # Print a message when the shell script is done executing
+    print("Shell script has finished executing.")
+
     # Read the output from output.txt
     try:
         with open("output.txt", "r") as file:
             output = file.read()
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="Output file not found.")
+
+    # If the output is empty, return an empty dictionary
+    if not output.strip():
+        return {}
 
     # Parse the output
     devices = output.split("\n\n--------------------------------------------------------------------------------\n\n")
