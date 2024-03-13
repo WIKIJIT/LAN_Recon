@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Perform a ping scan to discover hosts and store the output in a variable
-ping_scan_output=$(sudo nmap -sn "192.168.16.0/24")
+ping_scan_output=$(sudo nmap -sn "192.168.17.24/26")
 
 # Create an empty array to store IP, MAC address, and manufacturer
 declare -a ip_mac_manufacturer
@@ -16,6 +16,12 @@ while IFS= read -r line; do
         ip_mac_manufacturer+=("$ip_address $mac_address $manufacturer")
     fi
 done < <(echo "$ping_scan_output")
+
+# Get the script's directory
+script_dir=$(dirname "$0")
+
+# Open a new file in the script's directory for writing
+exec > "$script_dir/output.txt"
 
 # Iterate over each IP, MAC address, manufacturer, os and hostname
 for ip_mac in "${ip_mac_manufacturer[@]}"; do
