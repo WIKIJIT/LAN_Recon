@@ -43,7 +43,8 @@ async def run_recon(subnet: str):
             if ": " in line:
                 key, value = line.split(": ", 1)
                 device_info[key] = value
-        result[f"Device {i}"] = device_info
+        if device_info:  # Check if the device_info dictionary is not empty
+            result[f"Device {i}"] = device_info
 
     return result
 

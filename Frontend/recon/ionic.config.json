@@ -1,0 +1,7 @@
+{
+  "name": "Recon",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
