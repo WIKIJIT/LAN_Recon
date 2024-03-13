@@ -1,7 +1,15 @@
 #!/bin/bash
 
+# Check if subnet parameter is provided
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 subnet"
+    exit 1
+fi
+
+subnet=$1
+
 # Perform a ping scan to discover hosts and store the output in a variable
-ping_scan_output=$(sudo nmap -sn "192.168.17.24/26")
+ping_scan_output=$(sudo nmap -sn "$subnet")
 
 # Create an empty array to store IP, MAC address, and manufacturer
 declare -a ip_mac_manufacturer

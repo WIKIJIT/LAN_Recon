@@ -1,47 +1,31 @@
-IP Address: 192.168.17.5
-MAC Address: 14:D4:24:17:F9:99
-Manufacturer: AzureWave
-OS Details: Too many fingerprints match this host to give specific OS details
+IP Address: 192.168.3.98
+MAC Address: 00:E0:1F:81:C0:6D
+Manufacturer: Avidia
+OS Details: 
 Hostname: 
 
 --------------------------------------------------------------------------------
 
-IP Address: 192.168.17.16
-MAC Address: 7C:FD:6B:58:23:70
-Manufacturer: Xiaomi
-OS Details: Too many fingerprints match this host to give specific OS details
-Hostname: 
-
---------------------------------------------------------------------------------
-
-IP Address: 192.168.17.24
-MAC Address: 06:B0:F4:5B:E4:BD
-Manufacturer: Unknown
-OS Details: Too many fingerprints match this host to give specific OS details
-Hostname: 
-
---------------------------------------------------------------------------------
-
-IP Address: 192.168.17.37
-MAC Address: 02:78:74:90:6C:EC
-Manufacturer: Unknown
-OS Details: Too many fingerprints match this host to give specific OS details
-Hostname: 
-
---------------------------------------------------------------------------------
-
-IP Address: 192.168.17.42
-MAC Address: 60:22:32:38:42:E8
+IP Address: 192.168.3.99
+MAC Address: 60:22:32:37:70:04
 Manufacturer: Ubiquiti
-OS Details:  OpenWrt Chaos Calmer 15.05 (Linux 3.18) or Designated Driver (Linux 4.1 or 4.4)
+OS Details: 
 Hostname: 
 
 --------------------------------------------------------------------------------
 
-IP Address: 192.168.17.59
-MAC Address: 1A:F6:72:86:0F:B6
+IP Address: 192.168.3.106
+MAC Address: 86:4C:C1:CF:1B:F7
 Manufacturer: Unknown
-OS Details: Too many fingerprints match this host to give specific OS details
+OS Details: 
+Hostname: 
+
+--------------------------------------------------------------------------------
+
+IP Address: 192.168.3.112
+MAC Address: 60:22:32:37:94:DC
+Manufacturer: Ubiquiti
+OS Details: 
 Hostname: 
 
 --------------------------------------------------------------------------------
