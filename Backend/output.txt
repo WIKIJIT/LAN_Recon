@@ -6,26 +6,18 @@ Hostname:
 
 --------------------------------------------------------------------------------
 
-IP Address: 192.168.3.84
-MAC Address: FA:CA:A3:C8:93:E8
-Manufacturer: Unknown
+IP Address: 192.168.3.79
+MAC Address: 14:13:33:59:23:91
+Manufacturer: AzureWave
 OS Details: 
 Hostname: 
 
 --------------------------------------------------------------------------------
 
-IP Address: 192.168.3.90
-MAC Address: 92:50:4B:CC:2E:47
+IP Address: 192.168.3.84
+MAC Address: FA:CA:A3:C8:93:E8
 Manufacturer: Unknown
-OS Details: Too many fingerprints match this host to give specific OS details
-Hostname: 
-
---------------------------------------------------------------------------------
-
-IP Address: 192.168.3.93
-MAC Address: 04:C8:07:38:BE:46
-Manufacturer: Xiaomi
-OS Details: Too many fingerprints match this host to give specific OS details
+OS Details: 
 Hostname: 
 
 --------------------------------------------------------------------------------
@@ -65,7 +57,7 @@ Hostname:
 IP Address: 192.168.3.120
 MAC Address: A6:08:99:9D:45:D7
 Manufacturer: Unknown
-OS Details: 
+OS Details: Too many fingerprints match this host to give specific OS details
 Hostname: 
 
 --------------------------------------------------------------------------------
