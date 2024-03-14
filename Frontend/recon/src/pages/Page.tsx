@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IonContent, IonHeader, IonMenuButton, IonPage, IonToolbar, IonInput, IonButton, IonAlert, IonLoading, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/react';
+import { IonContent, IonHeader, IonMenuButton, IonPage, IonToolbar, IonInput, IonButton, IonAlert, IonLoading, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonTitle } from '@ionic/react';
 import { useParams } from 'react-router';
 import './Page.css';
 
@@ -47,7 +47,8 @@ const Page: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonMenuButton slot="start" />
+          {/* <IonMenuButton slot="start" /> */}
+          <IonTitle>Subnet Devices</IonTitle>
         </IonToolbar>
       </IonHeader>
 
