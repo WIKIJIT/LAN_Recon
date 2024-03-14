@@ -9,15 +9,7 @@ Hostname:
 IP Address: 192.168.20.24
 MAC Address: 34:1C:F0:6D:46:28
 Manufacturer: Xiaomi
-OS Details: 
-Hostname: 
-
---------------------------------------------------------------------------------
-
-IP Address: 192.168.20.29
-MAC Address: AE:7B:49:FD:43:2D
-Manufacturer: Unknown
-OS Details: 
+OS Details: Too many fingerprints match this host to give specific OS details
 Hostname: 
 
 --------------------------------------------------------------------------------
