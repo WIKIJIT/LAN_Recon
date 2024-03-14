@@ -1,15 +1,71 @@
-IP Address: 192.168.20.1
-MAC Address: 7C:5A:1C:59:58:E7
-Manufacturer: Sophos
+IP Address: 192.168.3.74
+MAC Address: 18:E8:29:FD:28:28
+Manufacturer: Ubiquiti
 OS Details: 
 Hostname: 
 
 --------------------------------------------------------------------------------
 
-IP Address: 192.168.20.24
-MAC Address: 34:1C:F0:6D:46:28
+IP Address: 192.168.3.84
+MAC Address: FA:CA:A3:C8:93:E8
+Manufacturer: Unknown
+OS Details: 
+Hostname: 
+
+--------------------------------------------------------------------------------
+
+IP Address: 192.168.3.90
+MAC Address: 92:50:4B:CC:2E:47
+Manufacturer: Unknown
+OS Details: Too many fingerprints match this host to give specific OS details
+Hostname: 
+
+--------------------------------------------------------------------------------
+
+IP Address: 192.168.3.93
+MAC Address: 04:C8:07:38:BE:46
 Manufacturer: Xiaomi
 OS Details: Too many fingerprints match this host to give specific OS details
+Hostname: 
+
+--------------------------------------------------------------------------------
+
+IP Address: 192.168.3.98
+MAC Address: 00:E0:1F:81:C0:6D
+Manufacturer: Avidia
+OS Details: 
+Hostname: 
+
+--------------------------------------------------------------------------------
+
+IP Address: 192.168.3.99
+MAC Address: 60:22:32:37:70:04
+Manufacturer: Ubiquiti
+OS Details: 
+Hostname: 
+
+--------------------------------------------------------------------------------
+
+IP Address: 192.168.3.112
+MAC Address: 60:22:32:37:94:DC
+Manufacturer: Ubiquiti
+OS Details: 
+Hostname: 
+
+--------------------------------------------------------------------------------
+
+IP Address: 192.168.3.118
+MAC Address: 60:22:32:49:94:B8
+Manufacturer: Ubiquiti
+OS Details:  OpenWrt Chaos Calmer 15.05 (Linux 3.18) or Designated Driver (Linux 4.1 or 4.4)
+Hostname: 
+
+--------------------------------------------------------------------------------
+
+IP Address: 192.168.3.120
+MAC Address: A6:08:99:9D:45:D7
+Manufacturer: Unknown
+OS Details: 
 Hostname: 
 
 --------------------------------------------------------------------------------

@@ -1,8 +1,7 @@
-import { IonContent, IonHeader, IonMenuButton, IonPage, IonToolbar, IonInput, IonButton, IonAlert, IonLoading, IonSelect, IonSelectOption, IonLabel, IonItem } from '@ionic/react';
-import { useParams, useHistory } from 'react-router';
-import ExploreContainer from '../components/ExploreContainer';
+import React, { useState } from 'react';
+import { IonContent, IonHeader, IonMenuButton, IonPage, IonToolbar, IonInput, IonButton, IonAlert, IonLoading, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/react';
+import { useParams } from 'react-router';
 import './Page.css';
-import { useState } from 'react';
 
 interface Device {
   "IP Address": string;
@@ -13,7 +12,6 @@ interface Device {
 }
 
 const Page: React.FC = () => {
-
   const { field1, field2, field3 } = useParams<{ field1: string; field2: string; field3: string; }>();
   const [input1, setInput1] = useState(field1);
   const [input2, setInput2] = useState(field2);
@@ -21,8 +19,6 @@ const Page: React.FC = () => {
   const [showAlert, setShowAlert] = useState(false);
   const [showLoading, setShowLoading] = useState(false);
   const [devices, setDevices] = useState<{ [key: string]: Device }>({});
-  const [selectedDevice, setSelectedDevice] = useState<string>('');
-  const history = useHistory();
 
   const validateInput = (input: string, setInput: (value: string) => void) => {
     const intInput = parseInt(input);
@@ -77,25 +73,21 @@ const Page: React.FC = () => {
           onDidDismiss={() => setShowLoading(false)}
           message={'Please wait...'}
         />
-        <IonItem>
-          <IonLabel>Select Device</IonLabel>
-          <IonSelect value={selectedDevice} placeholder="Select One" onIonChange={e => setSelectedDevice(e.detail.value)}>
-            {Object.keys(devices).map(device => (
-              <IonSelectOption key={device} value={device}>
-                {device} - {devices[device]?.Manufacturer || 'Unknown'}
-              </IonSelectOption>
-            ))}
-          </IonSelect>
-        </IonItem>
-        {selectedDevice && (
-          <div>
-            <p>IP Address: {devices[selectedDevice]?.["IP Address"] || 'Unknown'}</p>
-            <p>MAC Address: {devices[selectedDevice]?.["MAC Address"] || 'Unknown'}</p>
-            <p>Manufacturer: {devices[selectedDevice]?.Manufacturer || 'Unknown'}</p>
-            <p>OS Details: {devices[selectedDevice]?.["OS Details"] || 'Unknown'}</p>
-            <p>Hostname: {devices[selectedDevice]?.Hostname || 'Unknown'}</p>
-          </div>
-        )}
+        {Object.keys(devices).map(device => (
+          <IonCard key={device}>
+            <IonCardHeader>
+              <IonCardSubtitle>Device Information</IonCardSubtitle>
+              <IonCardTitle>{device}</IonCardTitle>
+            </IonCardHeader>
+            <IonCardContent>
+              <p>IP Address: {devices[device]?.["IP Address"] || 'Unknown'}</p>
+              <p>MAC Address: {devices[device]?.["MAC Address"] || 'Unknown'}</p>
+              <p>Manufacturer: {devices[device]?.Manufacturer || 'Unknown'}</p>
+              <p>OS Details: {devices[device]?.["OS Details"] || 'Unknown'}</p>
+              <p>Hostname: {devices[device]?.Hostname || 'Unknown'}</p>
+            </IonCardContent>
+          </IonCard>
+        ))}
       </IonContent>
     </IonPage>
   );
