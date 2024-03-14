@@ -30,10 +30,10 @@ const App: React.FC = () => {
     <IonApp>
       <IonReactRouter>
         <IonSplitPane contentId="main">
-          <Menu />
+          {/* <Menu /> */}
           <IonRouterOutlet id="main">
             <Route path="/" exact={true}>
-              <Redirect to="/foldexr/Inbox" />
+              <Redirect to="/folder/Inbox" />
             </Route>
             <Route path="/folder/:name" exact={true}>
               <Page />

@@ -1,0 +1,24 @@
+IP Address: 192.168.20.1
+MAC Address: 7C:5A:1C:59:58:E7
+Manufacturer: Sophos
+OS Details: 
+Hostname: 
+
+--------------------------------------------------------------------------------
+
+IP Address: 192.168.20.24
+MAC Address: 34:1C:F0:6D:46:28
+Manufacturer: Xiaomi
+OS Details: 
+Hostname: 
+
+--------------------------------------------------------------------------------
+
+IP Address: 192.168.20.29
+MAC Address: AE:7B:49:FD:43:2D
+Manufacturer: Unknown
+OS Details: 
+Hostname: 
+
+--------------------------------------------------------------------------------
+

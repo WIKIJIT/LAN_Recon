@@ -38,6 +38,7 @@ const Page: React.FC = () => {
     try {
       const response = await fetch(`http://127.0.0.1:8000/${input1}.${input2}.${input3}`);
       const data = await response.json();
+      console.log(data);
       setDevices(data);
     } catch (error) {
       console.error('Error:', error);
