@@ -1,0 +1,4 @@
+# Nmap 7.94 scan initiated Tue Apr  9 14:30:57 2024 as: nmap -v -A -T4 -o 192.168.1.10
+Read data files from: /opt/homebrew/bin/../share/nmap
+WARNING: No targets were specified, so 0 hosts scanned.
+# Nmap done at Tue Apr  9 14:30:57 2024 -- 0 IP addresses (0 hosts up) scanned in 0.12 seconds
